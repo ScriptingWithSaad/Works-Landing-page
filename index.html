@@ -1,476 +1,745 @@
-<!DOCTYPE html>
+<!doctype html>
+
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="#f5e41b" name="theme-color" />
+    <meta
+      content="WØRKS creative studio landing page: cultural advancement through strategy and design. A frontend recreation by ScriptingWithSaad."
+      name="description"
+    />
     <title>Home - WØRKS</title>
-
-    <link rel="shortcut icon" href="https://works.studio/favicon.ico">
-
-    <!-- locomotive cdn -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
-
-    <!-- Remix icon cdn -->
-
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
-
-    <!-- link file -->
-    <link rel="stylesheet" href="./stylesheet/style.css">
-
-</head>
-
-<body>
-
-
-
-
-
-    <div class="loader">
-
-        <div id="yellow-1"></div>
-        <div id="yellow-2"></div>
-
-        <video src="./assets/video//4_version1_200911_024121.mp4" autoplay muted loop></video>
-
-        <h1>
-            <em>We</em><em> are a </em>CREATIVE<em> studio<br>
-            </em>DEDICATED <em>to </em>CULTURAL<br>
-            ADVANCEMENT <em>through</em> <br>
-            STRATEGY <em>and </em>DESIGN.
+    <link href="assets/favicon.svg" rel="icon" type="image/svg+xml" />
+    <link
+      as="font"
+      crossorigin=""
+      href="assets/fonts/optimized/freight-book.woff2"
+      rel="preload"
+      type="font/woff2"
+    />
+    <link
+      as="font"
+      crossorigin=""
+      href="assets/fonts/optimized/freight-italic.woff2"
+      rel="preload"
+      type="font/woff2"
+    />
+    <link href="assets/vendor/locomotive-scroll-5.0.1.css" rel="stylesheet" />
+    <link href="stylesheet/style.d397f7b47844.css" rel="stylesheet" />
+    <script defer="" src="assets/vendor/gsap-3.12.5.min.js"></script>
+    <script
+      defer=""
+      src="assets/vendor/locomotive-scroll-5.0.1.min.js"
+    ></script>
+    <script defer="" src="javascript/app.0860f14ab923.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#home">Skip to content</a>
+    <div aria-hidden="true" class="loader" hidden="">
+      <div id="yellow-1"></div>
+      <div id="yellow-2"></div>
+      <video
+        data-src="assets/optimized/intro-faststart.mp4"
+        loop=""
+        muted=""
+        playsinline=""
+        poster="assets/optimized/intro-poster.webp"
+        preload="none"
+      ></video>
+      <div class="studio-statement">
+        <span class="statement-line"
+          ><em>We are a </em>CREATIVE <em>studio</em></span
+        >
+        <span class="statement-line">DEDICATED <em>to </em>CULTURAL</span>
+        <span class="statement-line">ADVANCEMENT <em>through</em></span>
+        <span class="statement-line">STRATEGY <em>and </em>DESIGN.</span>
+      </div>
+    </div>
+    <header class="nav">
+      <a aria-label="WØRKS home" class="brand" href="#home"
+        ><svg
+          class="core-logo"
+          height="21"
+          viewBox="0 0 94 21"
+          width="94"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M4.96428634,19.7404847 L10.4624983,19.7404847 L12.1914385,11.2806923 C12.4686274,9.85458509 12.6977527,8.3843647 12.6977527,8.3843647 L12.7491378,8.3843647 L12.9574838,9.64510669 C13.074954,10.3278051 13.2302092,11.1866277 13.3914523,11.9556332 L15.0357774,19.7404847 L20.4569116,19.7404847 L25.2871165,1.37029056 L19.7889045,1.37029056 L18.3797115,7.96519502 C17.9633834,10.004821 17.5279576,12.7777957 17.5279576,12.7777957 L17.4765724,12.7777957 L17.1875309,11.1238359 C17.0243075,10.2200617 16.8098767,9.08016463 16.5924337,8.06025341 L15.1385477,1.37029056 L10.2826502,1.37029056 L8.74689371,8.49225078 C8.3247468,10.492423 7.91893294,12.7777957 7.91893294,12.7777957 L7.86754779,12.7777957 L7.62424522,11.2313056 C7.45009058,10.1663391 7.20541332,8.75286968 6.9683075,7.66497245 L5.63229341,1.37029056 L0.262544342,1.37029056 L4.96428634,19.7404847 Z M25.7848396,20.9737285 L27.9687088,18.5072409 C29.4588784,19.5606366 31.3344366,20.1772586 33.5439984,20.1772586 C39.247751,20.1772586 42.8960974,16.117831 42.8960974,10.6196191 C42.8960974,8.10174633 42.1253199,5.86649191 40.7379208,4.19647426 L42.9474826,1.70429409 L41.3545427,0.265509652 L39.1449809,2.73199726 C37.6548111,1.65290893 35.7535602,1.03628703 33.5439984,1.03628703 C27.8402459,1.03628703 24.2432849,5.12140712 24.2432849,10.6196191 C24.2432849,13.1631844 25.0140622,15.3984388 26.4014615,17.0684564 L24.1918997,19.5349441 L25.7848396,20.9737285 Z M29.6901116,10.6196191 C29.6901116,7.61358731 31.0004332,5.32694777 33.569691,5.32694777 C34.5717016,5.32694777 35.3681717,5.68664386 35.9847936,6.27757318 L29.9984226,13.0090289 C29.792882,12.2896367 29.6901116,11.4931668 29.6901116,10.6196191 Z M33.569691,15.8865978 C32.5676806,15.8865978 31.7712105,15.5525943 31.1545887,14.961665 L37.115267,8.2559018 C37.3465001,8.94960144 37.4492705,9.77176397 37.4492705,10.6196191 C37.4492705,13.6256508 36.1389489,15.8865978 33.569691,15.8865978 Z M44.3701386,19.7404847 L49.7398876,19.7404847 L49.7398876,13.3430325 L52.2320678,13.3430325 C53.7993151,13.3430325 54.415937,14.0624247 54.7499406,15.4755166 C55.1353293,17.1198416 54.9297885,19.3807886 55.4436403,19.7404847 L60.7363115,19.7404847 L60.7363115,19.4578663 C60.0683044,19.2780183 60.4793858,16.6316826 59.9912266,14.4221208 C59.6829156,12.9833364 58.9121384,11.9556332 57.4219686,11.3903964 L57.4219686,11.3133187 C59.3489121,10.439771 60.4280006,8.94960144 60.4280006,6.84280992 C60.4280006,3.09169337 57.2421207,1.37029056 53.4910042,1.37029056 L44.3701386,1.37029056 L44.3701386,19.7404847 Z M49.7398876,5.58387354 L52.6945341,5.58387354 C54.2360888,5.58387354 55.0068663,6.35465093 55.0068663,7.56220216 C55.0068663,8.84683111 54.1590113,9.51483818 52.6174566,9.51483818 L49.7398876,9.51483818 L49.7398876,5.58387354 Z M62.1075823,19.7404847 L67.4773313,19.7404847 L67.4773313,13.8054989 L68.6591899,12.4694848 L73.3352392,19.7404847 L79.5785362,19.7404847 L72.3332289,8.76975336 L79.1931475,1.37029056 L73.0269283,1.37029056 L67.4773313,7.38235408 L67.4773313,1.37029056 L62.1075823,1.37029056 L62.1075823,19.7404847 Z M86.0369377,20.1772586 C81.2581179,20.1772586 77.6354641,18.1218522 77.5583863,13.8825766 L83.0565984,13.8825766 C83.2364463,15.3470537 84.36692,16.0407533 86.1397078,16.0407533 C87.1931037,16.0407533 88.4777327,15.629672 88.4777327,14.5248911 C88.4777327,13.5724938 87.5612317,13.2310971 85.8599107,12.7929148 L84.6320012,12.4836519 C81.6245733,11.7179151 78.1750085,10.6007132 78.1750085,6.84280992 C78.1750085,2.62922694 81.6178141,1.03628703 85.7543191,1.03628703 C89.5568208,1.03628703 93.0510116,2.62922694 93.1280894,6.6372693 L87.8097256,6.6372693 C87.6555699,5.63525871 86.9361779,4.99294422 85.4717007,4.99294422 C84.2898422,4.99294422 83.4676797,5.53248839 83.4676797,6.27757318 C83.4676797,7.32396188 84.9413815,7.50062488 87.5373807,8.11947167 L88.1465657,8.26874954 C91.1042135,9.02276748 93.9502521,10.284608 93.9502521,14.0367321 C93.9502521,18.0447745 90.3789835,20.1772586 86.0369377,20.1772586 Z"
+            fill="#000"
+          ></path></svg
+      ></a>
+      <nav aria-label="Main navigation" class="nav-right-elem" id="site-menu">
+        <a href="#projects">PROJECTS</a><a href="#home">ABOUT</a
+        ><a href="#studies">STUDIES</a>
+        <span aria-hidden="true" class="nav-symbol">×</span>
+      </nav>
+      <button
+        aria-controls="site-menu"
+        aria-expanded="false"
+        aria-label="Open navigation"
+        class="menu-toggle"
+        type="button"
+      >
+        <span></span><span></span>
+      </button>
+    </header>
+    <main id="main">
+      <section aria-label="About the studio" class="page-1" id="home">
+        <h1 class="studio-statement" data-scroll="" data-scroll-speed="-0.12">
+          <span class="statement-line"
+            ><em>We are a </em>CREATIVE <em>studio</em></span
+          >
+          <span class="statement-line">DEDICATED <em>to </em>CULTURAL</span>
+          <span class="statement-line">ADVANCEMENT <em>through</em></span>
+          <span class="statement-line">STRATEGY <em>and </em>DESIGN.</span>
         </h1>
-
-    </div>
-
-    <div class="nav">
-
-        <div class="nav-left-elem">
-            <a href="#"><svg class="core-logo" xmlns="http://www.w3.org/2000/svg" width="94" height="21"
-                    viewBox="0 0 94 21">
-                    <path fill="#000"
-                        d="M4.96428634,19.7404847 L10.4624983,19.7404847 L12.1914385,11.2806923 C12.4686274,9.85458509 12.6977527,8.3843647 12.6977527,8.3843647 L12.7491378,8.3843647 L12.9574838,9.64510669 C13.074954,10.3278051 13.2302092,11.1866277 13.3914523,11.9556332 L15.0357774,19.7404847 L20.4569116,19.7404847 L25.2871165,1.37029056 L19.7889045,1.37029056 L18.3797115,7.96519502 C17.9633834,10.004821 17.5279576,12.7777957 17.5279576,12.7777957 L17.4765724,12.7777957 L17.1875309,11.1238359 C17.0243075,10.2200617 16.8098767,9.08016463 16.5924337,8.06025341 L15.1385477,1.37029056 L10.2826502,1.37029056 L8.74689371,8.49225078 C8.3247468,10.492423 7.91893294,12.7777957 7.91893294,12.7777957 L7.86754779,12.7777957 L7.62424522,11.2313056 C7.45009058,10.1663391 7.20541332,8.75286968 6.9683075,7.66497245 L5.63229341,1.37029056 L0.262544342,1.37029056 L4.96428634,19.7404847 Z M25.7848396,20.9737285 L27.9687088,18.5072409 C29.4588784,19.5606366 31.3344366,20.1772586 33.5439984,20.1772586 C39.247751,20.1772586 42.8960974,16.117831 42.8960974,10.6196191 C42.8960974,8.10174633 42.1253199,5.86649191 40.7379208,4.19647426 L42.9474826,1.70429409 L41.3545427,0.265509652 L39.1449809,2.73199726 C37.6548111,1.65290893 35.7535602,1.03628703 33.5439984,1.03628703 C27.8402459,1.03628703 24.2432849,5.12140712 24.2432849,10.6196191 C24.2432849,13.1631844 25.0140622,15.3984388 26.4014615,17.0684564 L24.1918997,19.5349441 L25.7848396,20.9737285 Z M29.6901116,10.6196191 C29.6901116,7.61358731 31.0004332,5.32694777 33.569691,5.32694777 C34.5717016,5.32694777 35.3681717,5.68664386 35.9847936,6.27757318 L29.9984226,13.0090289 C29.792882,12.2896367 29.6901116,11.4931668 29.6901116,10.6196191 Z M33.569691,15.8865978 C32.5676806,15.8865978 31.7712105,15.5525943 31.1545887,14.961665 L37.115267,8.2559018 C37.3465001,8.94960144 37.4492705,9.77176397 37.4492705,10.6196191 C37.4492705,13.6256508 36.1389489,15.8865978 33.569691,15.8865978 Z M44.3701386,19.7404847 L49.7398876,19.7404847 L49.7398876,13.3430325 L52.2320678,13.3430325 C53.7993151,13.3430325 54.415937,14.0624247 54.7499406,15.4755166 C55.1353293,17.1198416 54.9297885,19.3807886 55.4436403,19.7404847 L60.7363115,19.7404847 L60.7363115,19.4578663 C60.0683044,19.2780183 60.4793858,16.6316826 59.9912266,14.4221208 C59.6829156,12.9833364 58.9121384,11.9556332 57.4219686,11.3903964 L57.4219686,11.3133187 C59.3489121,10.439771 60.4280006,8.94960144 60.4280006,6.84280992 C60.4280006,3.09169337 57.2421207,1.37029056 53.4910042,1.37029056 L44.3701386,1.37029056 L44.3701386,19.7404847 Z M49.7398876,5.58387354 L52.6945341,5.58387354 C54.2360888,5.58387354 55.0068663,6.35465093 55.0068663,7.56220216 C55.0068663,8.84683111 54.1590113,9.51483818 52.6174566,9.51483818 L49.7398876,9.51483818 L49.7398876,5.58387354 Z M62.1075823,19.7404847 L67.4773313,19.7404847 L67.4773313,13.8054989 L68.6591899,12.4694848 L73.3352392,19.7404847 L79.5785362,19.7404847 L72.3332289,8.76975336 L79.1931475,1.37029056 L73.0269283,1.37029056 L67.4773313,7.38235408 L67.4773313,1.37029056 L62.1075823,1.37029056 L62.1075823,19.7404847 Z M86.0369377,20.1772586 C81.2581179,20.1772586 77.6354641,18.1218522 77.5583863,13.8825766 L83.0565984,13.8825766 C83.2364463,15.3470537 84.36692,16.0407533 86.1397078,16.0407533 C87.1931037,16.0407533 88.4777327,15.629672 88.4777327,14.5248911 C88.4777327,13.5724938 87.5612317,13.2310971 85.8599107,12.7929148 L84.6320012,12.4836519 C81.6245733,11.7179151 78.1750085,10.6007132 78.1750085,6.84280992 C78.1750085,2.62922694 81.6178141,1.03628703 85.7543191,1.03628703 C89.5568208,1.03628703 93.0510116,2.62922694 93.1280894,6.6372693 L87.8097256,6.6372693 C87.6555699,5.63525871 86.9361779,4.99294422 85.4717007,4.99294422 C84.2898422,4.99294422 83.4676797,5.53248839 83.4676797,6.27757318 C83.4676797,7.32396188 84.9413815,7.50062488 87.5373807,8.11947167 L88.1465657,8.26874954 C91.1042135,9.02276748 93.9502521,10.284608 93.9502521,14.0367321 C93.9502521,18.0447745 90.3789835,20.1772586 86.0369377,20.1772586 Z">
-                    </path>
-                </svg></a>
+        <div class="page-1-down-elmes">
+          <a href="#contact">CONTACT</a>
+          <a
+            aria-label="Explore featured studios"
+            class="page-1-down-arrow arrow-link"
+            href="#studies"
+            ><svg
+              aria-hidden="true"
+              fill="none"
+              height="32"
+              viewBox="0 0 48 32"
+              width="48"
+            >
+              <path
+                d="m7 11 17 10 17-10"
+                stroke="currentColor"
+                stroke-width="3"
+              ></path></svg
+          ></a>
+          <a
+            href="https://github.com/ScriptingWithSaad"
+            rel="noopener noreferrer"
+            target="_blank"
+            >GITHUB</a
+          >
         </div>
-
-        <div class="nav-right-elem">
-
-            <p><a href="#">PROJECTS</a></p>
-            <p><a href="#">ABOUT</a></p>
-            <p><a href="#">STUDIES</a></p>
-            <i class="ri-close-large-fill"></i>
+      </section>
+      <section aria-label="Featured projects" class="page-2" id="studies">
+        <div class="project-backgrounds">
+          <img
+            alt=""
+            aria-hidden="true"
+            class="project-background"
+            data-project="mineral-health-brand-identity"
+            data-src="assets/optimized/mineral-health-brand-identity-960.webp"
+            data-srcset="assets/optimized/mineral-health-brand-identity-480.webp 480w, assets/optimized/mineral-health-brand-identity-960.webp 960w, assets/optimized/mineral-health-brand-identity-1600.webp 1600w"
+            decoding="async"
+            height="1200"
+            sizes="100vw"
+            width="960"
+          /><img
+            alt=""
+            aria-hidden="true"
+            class="project-background"
+            data-project="erthos-brand-identity"
+            data-src="assets/optimized/erthos-brand-identity-960.webp"
+            data-srcset="assets/optimized/erthos-brand-identity-480.webp 480w, assets/optimized/erthos-brand-identity-960.webp 960w, assets/optimized/erthos-brand-identity-1600.webp 1600w"
+            decoding="async"
+            height="1200"
+            sizes="100vw"
+            width="960"
+          /><img
+            alt=""
+            aria-hidden="true"
+            class="project-background"
+            data-project="converse-global-fa23"
+            data-src="assets/optimized/converse-global-fa23-960.webp"
+            data-srcset="assets/optimized/converse-global-fa23-480.webp 480w, assets/optimized/converse-global-fa23-960.webp 960w, assets/optimized/converse-global-fa23-1600.webp 1600w"
+            decoding="async"
+            height="1200"
+            sizes="100vw"
+            width="960"
+          /><img
+            alt=""
+            aria-hidden="true"
+            class="project-background"
+            data-project="skky-partners-brand-identity"
+            data-src="assets/optimized/skky-partners-brand-identity-960.webp"
+            data-srcset="assets/optimized/skky-partners-brand-identity-480.webp 480w, assets/optimized/skky-partners-brand-identity-960.webp 960w, assets/optimized/skky-partners-brand-identity-1600.webp 1600w"
+            decoding="async"
+            height="1200"
+            sizes="100vw"
+            width="960"
+          /><img
+            alt=""
+            aria-hidden="true"
+            class="project-background"
+            data-project="boldly-branding-and-identity"
+            data-src="assets/optimized/boldly-branding-and-identity-960.webp"
+            data-srcset="assets/optimized/boldly-branding-and-identity-480.webp 480w, assets/optimized/boldly-branding-and-identity-960.webp 960w, assets/optimized/boldly-branding-and-identity-1600.webp 1600w"
+            decoding="async"
+            height="1200"
+            sizes="100vw"
+            width="960"
+          />
         </div>
-
-    </div>
-    </div>
-
-    <div id="main">
-
-        <div class="page-1" data-scroll data-scroll-speed="-2.5">
-
-            <h1>
-                <em>We</em><em> are a </em>CREATIVE<em> studio<br>
-                </em>DEDICATED <em>to </em>CULTURAL<br>
-                ADVANCEMENT <em>through</em> <br>
-                STRATEGY <em>and </em>DESIGN.
-            </h1>
-
-            <div class="page-1-down-elmes">
-                <div class="page-1-down-contact">
-                    <p><a href="#">CONTACT</a></p>
-                </div>
-
-                <div class="page-1-down-arrow"><i class="ri-arrow-down-wide-fill"></i></div>
-
-                <div class="page-1-down-github">
-                    <p><a href="https://github.com/ScriptWithSaad">GITHUB</a></p>
-                </div>
-
+        <div aria-hidden="true" class="project-shade"></div>
+        <div class="featured-list">
+          <div class="page-2-elem" data-project="mineral-health-brand-identity">
+            <h2>
+              <button
+                aria-label="Preview MINERAL"
+                aria-pressed="false"
+                class="project-select"
+                type="button"
+              >
+                <span class="project-name">MINERAL</span
+                ><em aria-hidden="true" class="project-name-italic">MINERAL</em>
+              </button>
+            </h2>
+            <div aria-hidden="true" class="moving">
+              <div class="blur"></div>
+              <div class="moving-in">
+                <span>Creative direction</span><span>Digital Design</span
+                ><span>Strategy</span><span>Branding &amp; Identity</span
+                ><span>Development</span><span>Photography</span>
+              </div>
+              <div class="moving-in">
+                <span>Creative direction</span><span>Digital Design</span
+                ><span>Strategy</span><span>Branding &amp; Identity</span
+                ><span>Development</span><span>Photography</span>
+              </div>
             </div>
-
+          </div>
+          <div class="page-2-elem" data-project="erthos-brand-identity">
+            <h2>
+              <button
+                aria-label="Preview ERTHOS"
+                aria-pressed="false"
+                class="project-select"
+                type="button"
+              >
+                <span class="project-name">ERTHOS</span
+                ><em aria-hidden="true" class="project-name-italic">ERTHOS</em>
+              </button>
+            </h2>
+            <div aria-hidden="true" class="moving">
+              <div class="blur"></div>
+              <div class="moving-in">
+                <span>Creative direction</span><span>Digital Design</span
+                ><span>Strategy</span><span>Branding &amp; Identity</span
+                ><span>Development</span><span>Photography</span>
+              </div>
+              <div class="moving-in">
+                <span>Creative direction</span><span>Digital Design</span
+                ><span>Strategy</span><span>Branding &amp; Identity</span
+                ><span>Development</span><span>Photography</span>
+              </div>
+            </div>
+          </div>
+          <div class="page-2-elem" data-project="converse-global-fa23">
+            <h2>
+              <button
+                aria-label="Preview CONVERSE"
+                aria-pressed="false"
+                class="project-select"
+                type="button"
+              >
+                <span class="project-name">CONVERSE</span
+                ><em aria-hidden="true" class="project-name-italic"
+                  >CONVERSE</em
+                >
+              </button>
+            </h2>
+            <div aria-hidden="true" class="moving">
+              <div class="blur"></div>
+              <div class="moving-in">
+                <span>Creative direction</span><span>Digital Design</span
+                ><span>Strategy</span><span>Branding &amp; Identity</span
+                ><span>Development</span><span>Photography</span>
+              </div>
+              <div class="moving-in">
+                <span>Creative direction</span><span>Digital Design</span
+                ><span>Strategy</span><span>Branding &amp; Identity</span
+                ><span>Development</span><span>Photography</span>
+              </div>
+            </div>
+          </div>
+          <div class="page-2-elem" data-project="skky-partners-brand-identity">
+            <h2>
+              <button
+                aria-label="Preview SKY"
+                aria-pressed="false"
+                class="project-select"
+                type="button"
+              >
+                <span class="project-name">SKY</span
+                ><em aria-hidden="true" class="project-name-italic">SKY</em>
+              </button>
+            </h2>
+            <div aria-hidden="true" class="moving">
+              <div class="blur"></div>
+              <div class="moving-in">
+                <span>Creative direction</span><span>Digital Design</span
+                ><span>Strategy</span><span>Branding &amp; Identity</span
+                ><span>Development</span><span>Photography</span>
+              </div>
+              <div class="moving-in">
+                <span>Creative direction</span><span>Digital Design</span
+                ><span>Strategy</span><span>Branding &amp; Identity</span
+                ><span>Development</span><span>Photography</span>
+              </div>
+            </div>
+          </div>
+          <div class="page-2-elem" data-project="boldly-branding-and-identity">
+            <h2>
+              <button
+                aria-label="Preview BOLDLY"
+                aria-pressed="false"
+                class="project-select"
+                type="button"
+              >
+                <span class="project-name">BOLDLY</span
+                ><em aria-hidden="true" class="project-name-italic">BOLDLY</em>
+              </button>
+            </h2>
+            <div aria-hidden="true" class="moving">
+              <div class="blur"></div>
+              <div class="moving-in">
+                <span>Creative direction</span><span>Digital Design</span
+                ><span>Strategy</span><span>Branding &amp; Identity</span
+                ><span>Development</span><span>Photography</span>
+              </div>
+              <div class="moving-in">
+                <span>Creative direction</span><span>Digital Design</span
+                ><span>Strategy</span><span>Branding &amp; Identity</span
+                ><span>Development</span><span>Photography</span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="page-2" data-scroll data-scroll-speed="0">
-            <div class="page-2-elem"
-                set-img="https://works.studio/assets/imager/images/mineral-health/38349/MIN-1_240208_000417_1a58980f77ae6d8c6a1e26c40e92a05d.jpg">
-                <h2>MINERAL</h2>
-                <div class="moving">
-                    <div class="blur"></div>
-                    <div class="moving-in">
-                        <h5>Creative direction</h5>
-                        <h5>Digital Design</h5>
-                        <h5>Strategy</h5>
-                        <h5>Branding & Identity</h5>
-                        <h5>Development</h5>
-                        <h5>Photography</h5>
-                    </div>
-                    <div class="moving-in">
-                        <h5>Creative direction</h5>
-                        <h5>Digital Design</h5>
-                        <h5>Strategy</h5>
-                        <h5>Branding & Identity</h5>
-                        <h5>Development</h5>
-                        <h5>Photography</h5>
-                    </div>
-                    <div class="moving-in">
-                        <h5>Creative direction</h5>
-                        <h5>Digital Design</h5>
-                        <h5>Strategy</h5>
-                        <h5>Branding & Identity</h5>
-                        <h5>Development</h5>
-                        <h5>Photography</h5>
-                    </div>
+        <p aria-live="polite" class="sr-only" id="preview-status">
+          Choose a project to preview its image.
+        </p>
+        <a
+          aria-label="Explore all projects"
+          class="page-2-down-arrow arrow-link"
+          href="#projects"
+          ><svg
+            aria-hidden="true"
+            fill="none"
+            height="32"
+            viewBox="0 0 48 32"
+            width="48"
+          >
+            <path
+              d="m7 11 17 10 17-10"
+              stroke="currentColor"
+              stroke-width="3"
+            ></path></svg
+        ></a>
+      </section>
+      <section aria-label="All projects" class="page-3" id="projects">
+        <div class="image-container">
+          <article class="image-div">
+            <a
+              aria-label="View CONVERSE NEXT STUDIO case study (opens in a new tab)"
+              href="https://works.studio/work/converse-nextstudio"
+              rel="noopener noreferrer"
+              target="_blank"
+              ><div class="overlay-wrapper">
+                <div class="overlay">
+                  <p>
+                    CONVERSE <br />
+                    <em>NEXT STUDIO</em>
+                  </p>
                 </div>
-            </div>
-            <div class="page-2-elem"
-                set-img="https://works.studio/assets/imager/images/erthos-brand-identity/43075/Home-Featured-Image_1a58980f77ae6d8c6a1e26c40e92a05d.jpg">
-                <h2>ERTHOS</h2>
-                <div class="moving">
-                    <div class="blur"></div>
-                    <div class="moving-in">
-                        <h5>Creative direction</h5>
-                        <h5>Digital Design</h5>
-                        <h5>Strategy</h5>
-                        <h5>Branding & Identity</h5>
-                        <h5>Development</h5>
-                        <h5>Photography</h5>
-                    </div>
-                    <div class="moving-in">
-                        <h5>Creative direction</h5>
-                        <h5>Digital Design</h5>
-                        <h5>Strategy</h5>
-                        <h5>Branding & Identity</h5>
-                        <h5>Development</h5>
-                        <h5>Photography</h5>
-                    </div>
-                    <div class="moving-in">
-                        <h5>Creative direction</h5>
-                        <h5>Digital Design</h5>
-                        <h5>Strategy</h5>
-                        <h5>Branding & Identity</h5>
-                        <h5>Development</h5>
-                        <h5>Photography</h5>
-                    </div>
+              </div>
+              <img
+                alt="CONVERSE NEXT STUDIO"
+                decoding="async"
+                height="600"
+                loading="lazy"
+                sizes="(max-width: 560px) calc(100vw - 32px), (max-width: 900px) 46vw, 30vw"
+                src="assets/optimized/converse-nextstudio-480.webp"
+                srcset="
+                  assets/optimized/converse-nextstudio-480.webp   480w,
+                  assets/optimized/converse-nextstudio-960.webp   960w,
+                  assets/optimized/converse-nextstudio-1600.webp 1600w
+                "
+                width="480"
+            /></a>
+          </article>
+          <article class="image-div">
+            <a
+              aria-label="View Nike STUDIO 45 case study (opens in a new tab)"
+              href="https://works.studio/work/nike-nyc-studio-45"
+              rel="noopener noreferrer"
+              target="_blank"
+              ><div class="overlay-wrapper">
+                <div class="overlay">
+                  <p>
+                    Nike <br />
+                    <em>STUDIO 45</em>
+                  </p>
                 </div>
-            </div>
-            <div class="page-2-elem"
-                set-img="https://works.studio/assets/imager/images/converse-global-fa23/43403/converse-21_240523_143223_1a58980f77ae6d8c6a1e26c40e92a05d.jpg">
-                <h2>CONVERSE</h2>
-                <div class="moving">
-                    <div class="blur"></div>
-                    <div class="moving-in">
-                        <h5>Creative direction</h5>
-                        <h5>Digital Design</h5>
-                        <h5>Strategy</h5>
-                        <h5>Branding & Identity</h5>
-                        <h5>Development</h5>
-                        <h5>Photography</h5>
-                    </div>
-                    <div class="moving-in">
-                        <h5>Creative direction</h5>
-                        <h5>Digital Design</h5>
-                        <h5>Strategy</h5>
-                        <h5>Branding & Identity</h5>
-                        <h5>Development</h5>
-                        <h5>Photography</h5>
-                    </div>
-                    <div class="moving-in">
-                        <h5>Creative direction</h5>
-                        <h5>Digital Design</h5>
-                        <h5>Strategy</h5>
-                        <h5>Branding & Identity</h5>
-                        <h5>Development</h5>
-                        <h5>Photography</h5>
-                    </div>
+              </div>
+              <img
+                alt="Nike STUDIO 45"
+                decoding="async"
+                height="600"
+                loading="lazy"
+                sizes="(max-width: 560px) calc(100vw - 32px), (max-width: 900px) 46vw, 30vw"
+                src="assets/optimized/nike-nyc-studio-45-480.webp"
+                srcset="
+                  assets/optimized/nike-nyc-studio-45-480.webp   480w,
+                  assets/optimized/nike-nyc-studio-45-960.webp   960w,
+                  assets/optimized/nike-nyc-studio-45-1600.webp 1600w
+                "
+                width="480"
+            /></a>
+          </article>
+          <article class="image-div">
+            <a
+              aria-label="View FUTURE WORLD IDENTITY &amp; WEBSITE case study (opens in a new tab)"
+              href="https://works.studio/work/futurevvorld-brand-identity"
+              rel="noopener noreferrer"
+              target="_blank"
+              ><div class="overlay-wrapper">
+                <div class="overlay">
+                  <p>
+                    FUTURE WORLD <br />
+                    <em>IDENTITY &amp; WEBSITE</em>
+                  </p>
                 </div>
-            </div>
-            <div class="page-2-elem"
-                set-img="https://works.studio/assets/imager/images/skky-partners/37986/skky-25_1a58980f77ae6d8c6a1e26c40e92a05d.jpg">
-                <h2>SKY</h2>
-                <div class="moving">
-                    <div class="blur"></div>
-                    <div class="moving-in">
-                        <h5>Creative direction</h5>
-                        <h5>Digital Design</h5>
-                        <h5>Strategy</h5>
-                        <h5>Branding & Identity</h5>
-                        <h5>Development</h5>
-                        <h5>Photography</h5>
-                    </div>
-                    <div class="moving-in">
-                        <h5>Creative direction</h5>
-                        <h5>Digital Design</h5>
-                        <h5>Strategy</h5>
-                        <h5>Branding & Identity</h5>
-                        <h5>Development</h5>
-                        <h5>Photography</h5>
-                    </div>
-                    <div class="moving-in">
-                        <h5>Creative direction</h5>
-                        <h5>Digital Design</h5>
-                        <h5>Strategy</h5>
-                        <h5>Branding & Identity</h5>
-                        <h5>Development</h5>
-                        <h5>Photography</h5>
-                    </div>
+              </div>
+              <img
+                alt="FUTURE WORLD IDENTITY &amp; WEBSITE"
+                decoding="async"
+                height="471"
+                loading="lazy"
+                sizes="(max-width: 560px) calc(100vw - 32px), (max-width: 900px) 46vw, 30vw"
+                src="assets/optimized/futurevvorld-brand-identity-480.webp"
+                srcset="
+                  assets/optimized/futurevvorld-brand-identity-480.webp   480w,
+                  assets/optimized/futurevvorld-brand-identity-960.webp   960w,
+                  assets/optimized/futurevvorld-brand-identity-1000.webp 1000w
+                "
+                width="480"
+            /></a>
+          </article>
+          <article class="image-div">
+            <a
+              aria-label="View PUBLIC.COM CAMPAIGN case study (opens in a new tab)"
+              href="https://works.studio/work/public-com"
+              rel="noopener noreferrer"
+              target="_blank"
+              ><div class="overlay-wrapper">
+                <div class="overlay">
+                  <p>
+                    PUBLIC.COM <br />
+                    <em>CAMPAIGN</em>
+                  </p>
                 </div>
-            </div>
-            <div class="page-2-elem"
-                set-img="https://works.studio/assets/imager/images/boldly/37287/BOLDLY-1_1a58980f77ae6d8c6a1e26c40e92a05d.jpg">
-                <h2>BOLDLY</h2>
-                <div class="moving">
-                    <div class="blur"></div>
-                    <div class="moving-in">
-                        <h5>Creative direction</h5>
-                        <h5>Digital Design</h5>
-                        <h5>Strategy</h5>
-                        <h5>Branding & Identity</h5>
-                        <h5>Development</h5>
-                        <h5>Photography</h5>
-                    </div>
-                    <div class="moving-in">
-                        <h5>Creative direction</h5>
-                        <h5>Digital Design</h5>
-                        <h5>Strategy</h5>
-                        <h5>Branding & Identity</h5>
-                        <h5>Development</h5>
-                        <h5>Photography</h5>
-                    </div>
-                    <div class="moving-in">
-                        <h5>Creative direction</h5>
-                        <h5>Digital Design</h5>
-                        <h5>Strategy</h5>
-                        <h5>Branding & Identity</h5>
-                        <h5>Development</h5>
-                        <h5>Photography</h5>
-                    </div>
+              </div>
+              <img
+                alt="PUBLIC.COM CAMPAIGN"
+                decoding="async"
+                height="600"
+                loading="lazy"
+                sizes="(max-width: 560px) calc(100vw - 32px), (max-width: 900px) 46vw, 30vw"
+                src="assets/optimized/public-com-480.webp"
+                srcset="
+                  assets/optimized/public-com-480.webp   480w,
+                  assets/optimized/public-com-960.webp   960w,
+                  assets/optimized/public-com-1600.webp 1600w
+                "
+                width="480"
+            /></a>
+          </article>
+          <article class="image-div">
+            <a
+              aria-label="View NIKE NFL 2022 CAMPAIGN case study (opens in a new tab)"
+              href="https://works.studio/work/nike-nfl"
+              rel="noopener noreferrer"
+              target="_blank"
+              ><div class="overlay-wrapper">
+                <div class="overlay">
+                  <p>
+                    NIKE NFL <br />
+                    <em>2022 CAMPAIGN</em>
+                  </p>
                 </div>
-            </div>
-
-            <!-- page-2-down-elem -->
-            <div class="page-2-down-elem">
-                <div class="page-2-down-arrow"><i class="ri-arrow-down-wide-fill"></i></div>
-            </div>
+              </div>
+              <img
+                alt="NIKE NFL 2022 CAMPAIGN"
+                decoding="async"
+                height="600"
+                loading="lazy"
+                sizes="(max-width: 560px) calc(100vw - 32px), (max-width: 900px) 46vw, 30vw"
+                src="assets/optimized/nike-nfl-480.webp"
+                srcset="
+                  assets/optimized/nike-nfl-480.webp   480w,
+                  assets/optimized/nike-nfl-960.webp   960w,
+                  assets/optimized/nike-nfl-1600.webp 1600w
+                "
+                width="480"
+            /></a>
+          </article>
+          <article class="image-div">
+            <a
+              aria-label="View CONVERSE BASKETBALL IDENTITY case study (opens in a new tab)"
+              href="https://works.studio/work/converse-basketball"
+              rel="noopener noreferrer"
+              target="_blank"
+              ><div class="overlay-wrapper">
+                <div class="overlay">
+                  <p>
+                    CONVERSE <br />
+                    <em>BASKETBALL IDENTITY</em>
+                  </p>
+                </div>
+              </div>
+              <img
+                alt="CONVERSE BASKETBALL IDENTITY"
+                decoding="async"
+                height="600"
+                loading="lazy"
+                sizes="(max-width: 560px) calc(100vw - 32px), (max-width: 900px) 46vw, 30vw"
+                src="assets/optimized/converse-basketball-480.webp"
+                srcset="
+                  assets/optimized/converse-basketball-480.webp   480w,
+                  assets/optimized/converse-basketball-960.webp   960w,
+                  assets/optimized/converse-basketball-1600.webp 1600w
+                "
+                width="480"
+            /></a>
+          </article>
+          <article class="image-div">
+            <a
+              aria-label="View JEEN-YUHS FILM IDENTITY case study (opens in a new tab)"
+              href="https://works.studio/work/jeen-yuhs"
+              rel="noopener noreferrer"
+              target="_blank"
+              ><div class="overlay-wrapper">
+                <div class="overlay">
+                  <p>
+                    JEEN-YUHS <br />
+                    <em>FILM IDENTITY</em>
+                  </p>
+                </div>
+              </div>
+              <img
+                alt="JEEN-YUHS FILM IDENTITY"
+                decoding="async"
+                height="600"
+                loading="lazy"
+                sizes="(max-width: 560px) calc(100vw - 32px), (max-width: 900px) 46vw, 30vw"
+                src="assets/optimized/jeen-yuhs-480.webp"
+                srcset="
+                  assets/optimized/jeen-yuhs-480.webp   480w,
+                  assets/optimized/jeen-yuhs-960.webp   960w,
+                  assets/optimized/jeen-yuhs-1600.webp 1600w
+                "
+                width="480"
+            /></a>
+          </article>
+          <article class="image-div">
+            <a
+              aria-label="View BETWEEN PLACES VISUAL IDENTITY case study (opens in a new tab)"
+              href="https://works.studio/work/between-places"
+              rel="noopener noreferrer"
+              target="_blank"
+              ><div class="overlay-wrapper">
+                <div class="overlay">
+                  <p>
+                    BETWEEN PLACES <br />
+                    <em>VISUAL IDENTITY</em>
+                  </p>
+                </div>
+              </div>
+              <img
+                alt="BETWEEN PLACES VISUAL IDENTITY"
+                decoding="async"
+                height="600"
+                loading="lazy"
+                sizes="(max-width: 560px) calc(100vw - 32px), (max-width: 900px) 46vw, 30vw"
+                src="assets/optimized/between-places-480.webp"
+                srcset="
+                  assets/optimized/between-places-480.webp   480w,
+                  assets/optimized/between-places-960.webp   960w,
+                  assets/optimized/between-places-1600.webp 1600w
+                "
+                width="480"
+            /></a>
+          </article>
+          <article class="image-div">
+            <a
+              aria-label="View NIKE AiR FEAR OF GOD IDENTITY case study (opens in a new tab)"
+              href="https://works.studio/work/nike-air-fear-of-god"
+              rel="noopener noreferrer"
+              target="_blank"
+              ><div class="overlay-wrapper">
+                <div class="overlay">
+                  <p>
+                    NIKE AiR <br />
+                    <em>FEAR OF GOD IDENTITY</em>
+                  </p>
+                </div>
+              </div>
+              <img
+                alt="NIKE AiR FEAR OF GOD IDENTITY"
+                decoding="async"
+                height="600"
+                loading="lazy"
+                sizes="(max-width: 560px) calc(100vw - 32px), (max-width: 900px) 46vw, 30vw"
+                src="assets/optimized/nike-air-fear-of-god-480.webp"
+                srcset="
+                  assets/optimized/nike-air-fear-of-god-480.webp   480w,
+                  assets/optimized/nike-air-fear-of-god-960.webp   960w,
+                  assets/optimized/nike-air-fear-of-god-1600.webp 1600w
+                "
+                width="480"
+            /></a>
+          </article>
+          <article class="image-div">
+            <a
+              aria-label="View VERSACE TRIGRECA IDENTITY case study (opens in a new tab)"
+              href="https://works.studio/work/versace-trigreca"
+              rel="noopener noreferrer"
+              target="_blank"
+              ><div class="overlay-wrapper">
+                <div class="overlay">
+                  <p>
+                    VERSACE <br />
+                    <em>TRIGRECA IDENTITY</em>
+                  </p>
+                </div>
+              </div>
+              <img
+                alt="VERSACE TRIGRECA IDENTITY"
+                decoding="async"
+                height="600"
+                loading="lazy"
+                sizes="(max-width: 560px) calc(100vw - 32px), (max-width: 900px) 46vw, 30vw"
+                src="assets/optimized/versace-trigreca-480.webp"
+                srcset="
+                  assets/optimized/versace-trigreca-480.webp   480w,
+                  assets/optimized/versace-trigreca-960.webp   960w,
+                  assets/optimized/versace-trigreca-1486.webp 1486w
+                "
+                width="480"
+            /></a>
+          </article>
+          <article class="image-div">
+            <a
+              aria-label="View KITH KITHSPORT case study (opens in a new tab)"
+              href="https://works.studio/work/kith-sport"
+              rel="noopener noreferrer"
+              target="_blank"
+              ><div class="overlay-wrapper">
+                <div class="overlay">
+                  <p>KITH<br /><em>KITHSPORT</em></p>
+                </div>
+              </div>
+              <img
+                alt="KITH KITHSPORT"
+                decoding="async"
+                height="600"
+                loading="lazy"
+                sizes="(max-width: 560px) calc(100vw - 32px), (max-width: 900px) 46vw, 30vw"
+                src="assets/optimized/kith-sport-480.webp"
+                srcset="
+                  assets/optimized/kith-sport-480.webp   480w,
+                  assets/optimized/kith-sport-960.webp   960w,
+                  assets/optimized/kith-sport-1600.webp 1600w
+                "
+                width="480"
+            /></a>
+          </article>
+          <article class="image-div">
+            <a
+              aria-label="View ESSENTIAL FEAR OF GOD IDENTITY case study (opens in a new tab)"
+              href="https://works.studio/work/fear-of-god-essentials-identity"
+              rel="noopener noreferrer"
+              target="_blank"
+              ><div class="overlay-wrapper">
+                <div class="overlay">
+                  <p>
+                    ESSENTIAL FEAR <br />
+                    <em>OF GOD IDENTITY</em>
+                  </p>
+                </div>
+              </div>
+              <img
+                alt="ESSENTIAL FEAR OF GOD IDENTITY"
+                decoding="async"
+                height="600"
+                loading="lazy"
+                sizes="(max-width: 560px) calc(100vw - 32px), (max-width: 900px) 46vw, 30vw"
+                src="assets/optimized/fear-of-god-essentials-identity-480.webp"
+                srcset="
+                  assets/optimized/fear-of-god-essentials-identity-480.webp   480w,
+                  assets/optimized/fear-of-god-essentials-identity-960.webp   960w,
+                  assets/optimized/fear-of-god-essentials-identity-1600.webp 1600w
+                "
+                width="480"
+            /></a>
+          </article>
         </div>
-
-        <div class="page-3" data-scroll>
-
-            <div class="image-container">
-                <div class="image-div">
-                    <a href="#">
-                        <div class="overlay-wrapper">
-                            <div class="overlay">
-                                <p>CONVERSE <br>
-                                    <em>NEXT STUDIO</em>
-                                </p>
-                            </div>
-                        </div>
-                        <img src="https://works.studio/assets/imager/images/converse-nextstudio/35375/Cover_e49f8295ccc5a85e1a76e2d68c06456f.jpg"
-                            alt="converse next-studio">
-                    </a>
-                </div>
-                <div class="image-div">
-                    <a href="#">
-                        <div class="overlay-wrapper">
-                            <div class="overlay">
-                                <p>Nike <br>
-                                    <em>STUDIO 45</em>
-                                </p>
-                            </div>
-                        </div>
-                        <img src="https://works.studio/assets/imager/images/nike-studio-45/3184/Nike-Studio-45-Desk_WORKS_e49f8295ccc5a85e1a76e2d68c06456f.jpg"
-                            alt="Nike STUDIO 45">
-                    </a>
-                </div>
-                <div class="image-div">
-                    <a href="#">
-                        <div class="overlay-wrapper">
-                            <div class="overlay">
-                                <p>FUTURE WORLD <br>
-                                    <em>IDENTITY & WEBSITE</em>
-                                </p>
-                            </div>
-                        </div>
-                        <img src="https://works.studio/assets/imager/images/futurevvorld/38020/fvv-1.5_e49f8295ccc5a85e1a76e2d68c06456f.jpg"
-                            alt="FUTURE WORLD IDENTITY & WEBSITE">
-                    </a>
-                </div>
-                <div class="image-div">
-                    <a href="#">
-                        <div class="overlay-wrapper">
-                            <div class="overlay">
-                                <p>PUBLIC.COM <br>
-                                    <em>CAMAPAIGN</em>
-                                </p>
-                            </div>
-                        </div>
-                        <img src="https://works.studio/assets/imager/images/public/37839/public-cover2_e49f8295ccc5a85e1a76e2d68c06456f.jpg"
-                            alt="PUBLIC.COM CAMAPAIGN">
-                    </a>
-                </div>
-                <div class="image-div">
-                    <a href="#">
-                        <div class="overlay-wrapper">
-                            <div class="overlay">
-                                <p>NIKE NFL <br>
-                                    <em>2022 CAMAPAIGN</em>
-                                </p>
-                            </div>
-                        </div>
-                        <img src="https://works.studio/assets/imager/images/nike-nfl-2022/37789/nike-nfl-cover2_e49f8295ccc5a85e1a76e2d68c06456f.jpg"
-                            alt="NIKE NFL 2022 CAMAPAIGN">
-                    </a>
-                </div>
-                <div class="image-div">
-                    <a href="#">
-                        <div class="overlay-wrapper">
-                            <div class="overlay">
-                                <p>CONVERSE <br>
-                                    <em>BASKETBALL IDENTITY</em>
-                                </p>
-                            </div>
-                        </div>
-                        <img src="https://works.studio/assets/imager/images/converse/38120/v1.5-converse-bball-3_e49f8295ccc5a85e1a76e2d68c06456f.jpg"
-                            alt="CONVERSE BASKETBALL IDENTITY">
-                    </a>
-                </div>
-                <div class="image-div">
-                    <a href="#">
-                        <div class="overlay-wrapper">
-                            <div class="overlay">
-                                <p>JEEN UHUS <br>
-                                    <em>FILM IDENTITY</em>
-                                </p>
-                            </div>
-                        </div>
-                        <img src="https://works.studio/assets/imager/images/jeen-yuhs/35858/v1.5-home-image2_e49f8295ccc5a85e1a76e2d68c06456f.jpg"
-                            alt="JEEN UHUS FILM IDENTITY">
-                    </a>
-                </div>
-                <div class="image-div">
-                    <a href="#">
-                        <div class="overlay-wrapper">
-                            <div class="overlay">
-                                <p>BETWEEN PLACES <br>
-                                    <em>VISUAL IDENTITY</em>
-                                </p>
-                            </div>
-                        </div>
-                        <img src="https://works.studio/assets/imager/images/between-places/40495/W%C3%98RKS_BetweenPlaces_Cover_240219_231911_e49f8295ccc5a85e1a76e2d68c06456f.jpg"
-                            alt="BETWEEN PLACES VISUAL IDENTITY">
-                    </a>
-                </div>
-                <div class="image-div">
-                    <a href="#">
-                        <div class="overlay-wrapper">
-                            <div class="overlay">
-                                <p>NIKE AiR <br>
-                                    <em>FEAR OF GOD IDENTITY</em>
-                                </p>
-                            </div>
-                        </div>
-                        <img src="https://works.studio/assets/imager/images/Fear-of-God-Nike/38013/fog-1.5_e49f8295ccc5a85e1a76e2d68c06456f.jpg"
-                            alt="NIKE AiR FEAR OF GOD IDENTITY">
-                    </a>
-                </div>
-                <div class="image-div">
-                    <a href="#">
-                        <div class="overlay-wrapper">
-                            <div class="overlay">
-                                <p>VERSACE <br>
-                                    <em>TIGRECA IDENTITY</em>
-                                </p>
-                            </div>
-                        </div>
-                        <img src="https://works.studio/assets/imager/images/versace-trigerca-identity/38005/versace-1.5_e49f8295ccc5a85e1a76e2d68c06456f.jpg"
-                            alt="VERSACE TIGRECA IDENTITY">
-                    </a>
-                </div>
-                <div class="image-div">
-                    <a href="#">
-                        <div class="overlay-wrapper">
-                            <div class="overlay">
-                                <p>CONVERSE <br>
-                                    <em>BASKETBALL H019</em>
-                                </p>
-                            </div>
-                        </div>
-                        <img src="https://works.studio/assets/imager/images/kith-sport-ss18/9940/JACKIELEEPHOTO_090717_INSTITUTE-KITHSPORT-203255_201124_023510_e49f8295ccc5a85e1a76e2d68c06456f.jpg"
-                            alt="CONVERSE BASKETBALL H019">
-                    </a>
-                </div>
-                <div class="image-div">
-                    <a href="#">
-                        <div class="overlay-wrapper">
-                            <div class="overlay">
-                                <p>ESSENTIAL FEAR <br>
-                                    <em>OF GOD IDENTITY</em>
-                                </p>
-                            </div>
-                        </div>
-                        <img src="https://works.studio/assets/imager/images/essentials-fear-of-god/42214/Thumbnail_e49f8295ccc5a85e1a76e2d68c06456f.jpg"
-                            alt="ESSENTIAL FEAR OF GOD IDENTITY">
-                    </a>
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- footer -->
-
-        <div class="footer">
-            <div class="top-footer">
-                <div class="footer-arrow"><i class="ri-arrow-up-wide-line"></i></i>
-                    <p>BACK TO TOP</p>
-                </div>
-
-            </div>
-            <div class="bottom-footer">
-
-                <p>
-                    <a href="#">
-                        <a href="#"><svg class="core-logo" xmlns="http://www.w3.org/2000/svg" width="94" height="21"
-                                viewBox="0 0 94 21">
-                                <path fill="#fff"
-                                    d="M4.96428634,19.7404847 L10.4624983,19.7404847 L12.1914385,11.2806923 C12.4686274,9.85458509 12.6977527,8.3843647 12.6977527,8.3843647 L12.7491378,8.3843647 L12.9574838,9.64510669 C13.074954,10.3278051 13.2302092,11.1866277 13.3914523,11.9556332 L15.0357774,19.7404847 L20.4569116,19.7404847 L25.2871165,1.37029056 L19.7889045,1.37029056 L18.3797115,7.96519502 C17.9633834,10.004821 17.5279576,12.7777957 17.5279576,12.7777957 L17.4765724,12.7777957 L17.1875309,11.1238359 C17.0243075,10.2200617 16.8098767,9.08016463 16.5924337,8.06025341 L15.1385477,1.37029056 L10.2826502,1.37029056 L8.74689371,8.49225078 C8.3247468,10.492423 7.91893294,12.7777957 7.91893294,12.7777957 L7.86754779,12.7777957 L7.62424522,11.2313056 C7.45009058,10.1663391 7.20541332,8.75286968 6.9683075,7.66497245 L5.63229341,1.37029056 L0.262544342,1.37029056 L4.96428634,19.7404847 Z M25.7848396,20.9737285 L27.9687088,18.5072409 C29.4588784,19.5606366 31.3344366,20.1772586 33.5439984,20.1772586 C39.247751,20.1772586 42.8960974,16.117831 42.8960974,10.6196191 C42.8960974,8.10174633 42.1253199,5.86649191 40.7379208,4.19647426 L42.9474826,1.70429409 L41.3545427,0.265509652 L39.1449809,2.73199726 C37.6548111,1.65290893 35.7535602,1.03628703 33.5439984,1.03628703 C27.8402459,1.03628703 24.2432849,5.12140712 24.2432849,10.6196191 C24.2432849,13.1631844 25.0140622,15.3984388 26.4014615,17.0684564 L24.1918997,19.5349441 L25.7848396,20.9737285 Z M29.6901116,10.6196191 C29.6901116,7.61358731 31.0004332,5.32694777 33.569691,5.32694777 C34.5717016,5.32694777 35.3681717,5.68664386 35.9847936,6.27757318 L29.9984226,13.0090289 C29.792882,12.2896367 29.6901116,11.4931668 29.6901116,10.6196191 Z M33.569691,15.8865978 C32.5676806,15.8865978 31.7712105,15.5525943 31.1545887,14.961665 L37.115267,8.2559018 C37.3465001,8.94960144 37.4492705,9.77176397 37.4492705,10.6196191 C37.4492705,13.6256508 36.1389489,15.8865978 33.569691,15.8865978 Z M44.3701386,19.7404847 L49.7398876,19.7404847 L49.7398876,13.3430325 L52.2320678,13.3430325 C53.7993151,13.3430325 54.415937,14.0624247 54.7499406,15.4755166 C55.1353293,17.1198416 54.9297885,19.3807886 55.4436403,19.7404847 L60.7363115,19.7404847 L60.7363115,19.4578663 C60.0683044,19.2780183 60.4793858,16.6316826 59.9912266,14.4221208 C59.6829156,12.9833364 58.9121384,11.9556332 57.4219686,11.3903964 L57.4219686,11.3133187 C59.3489121,10.439771 60.4280006,8.94960144 60.4280006,6.84280992 C60.4280006,3.09169337 57.2421207,1.37029056 53.4910042,1.37029056 L44.3701386,1.37029056 L44.3701386,19.7404847 Z M49.7398876,5.58387354 L52.6945341,5.58387354 C54.2360888,5.58387354 55.0068663,6.35465093 55.0068663,7.56220216 C55.0068663,8.84683111 54.1590113,9.51483818 52.6174566,9.51483818 L49.7398876,9.51483818 L49.7398876,5.58387354 Z M62.1075823,19.7404847 L67.4773313,19.7404847 L67.4773313,13.8054989 L68.6591899,12.4694848 L73.3352392,19.7404847 L79.5785362,19.7404847 L72.3332289,8.76975336 L79.1931475,1.37029056 L73.0269283,1.37029056 L67.4773313,7.38235408 L67.4773313,1.37029056 L62.1075823,1.37029056 L62.1075823,19.7404847 Z M86.0369377,20.1772586 C81.2581179,20.1772586 77.6354641,18.1218522 77.5583863,13.8825766 L83.0565984,13.8825766 C83.2364463,15.3470537 84.36692,16.0407533 86.1397078,16.0407533 C87.1931037,16.0407533 88.4777327,15.629672 88.4777327,14.5248911 C88.4777327,13.5724938 87.5612317,13.2310971 85.8599107,12.7929148 L84.6320012,12.4836519 C81.6245733,11.7179151 78.1750085,10.6007132 78.1750085,6.84280992 C78.1750085,2.62922694 81.6178141,1.03628703 85.7543191,1.03628703 C89.5568208,1.03628703 93.0510116,2.62922694 93.1280894,6.6372693 L87.8097256,6.6372693 C87.6555699,5.63525871 86.9361779,4.99294422 85.4717007,4.99294422 C84.2898422,4.99294422 83.4676797,5.53248839 83.4676797,6.27757318 C83.4676797,7.32396188 84.9413815,7.50062488 87.5373807,8.11947167 L88.1465657,8.26874954 C91.1042135,9.02276748 93.9502521,10.284608 93.9502521,14.0367321 C93.9502521,18.0447745 90.3789835,20.1772586 86.0369377,20.1772586 Z">
-                                </path>
-                            </svg></a>
-                    </a>
-                </p>
-                <div class="right-bottom-footer">
-                    <p>
-                        <a href="#">
-                            NEWSLETTER
-                        </a>
-                    </p>
-                    <p>
-                        <a href="#">
-                            GITHUB
-                        </a>
-                    </p>
-
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-
-
-
-
-    <!-- gsap cdn -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <!-- locomotive cdn -->
-
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
-
-
-    <!-- link js file -->
-    <script src="./javascript/script.js"></script>
-</body>
-
+      </section>
+    </main>
+    <footer class="footer" id="contact">
+      <div class="top-footer">
+        <a class="footer-arrow arrow-link" href="#home"
+          ><svg
+            aria-hidden="true"
+            fill="none"
+            height="32"
+            viewBox="0 0 48 32"
+            width="48"
+          >
+            <path
+              d="m7 11 17 10 17-10"
+              stroke="currentColor"
+              stroke-width="3"
+            ></path></svg
+          ><span>BACK TO TOP</span></a
+        >
+      </div>
+      <div class="bottom-footer">
+        <a aria-label="WØRKS home" class="brand" href="#home"
+          ><svg
+            class="core-logo"
+            height="21"
+            viewBox="0 0 94 21"
+            width="94"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4.96428634,19.7404847 L10.4624983,19.7404847 L12.1914385,11.2806923 C12.4686274,9.85458509 12.6977527,8.3843647 12.6977527,8.3843647 L12.7491378,8.3843647 L12.9574838,9.64510669 C13.074954,10.3278051 13.2302092,11.1866277 13.3914523,11.9556332 L15.0357774,19.7404847 L20.4569116,19.7404847 L25.2871165,1.37029056 L19.7889045,1.37029056 L18.3797115,7.96519502 C17.9633834,10.004821 17.5279576,12.7777957 17.5279576,12.7777957 L17.4765724,12.7777957 L17.1875309,11.1238359 C17.0243075,10.2200617 16.8098767,9.08016463 16.5924337,8.06025341 L15.1385477,1.37029056 L10.2826502,1.37029056 L8.74689371,8.49225078 C8.3247468,10.492423 7.91893294,12.7777957 7.91893294,12.7777957 L7.86754779,12.7777957 L7.62424522,11.2313056 C7.45009058,10.1663391 7.20541332,8.75286968 6.9683075,7.66497245 L5.63229341,1.37029056 L0.262544342,1.37029056 L4.96428634,19.7404847 Z M25.7848396,20.9737285 L27.9687088,18.5072409 C29.4588784,19.5606366 31.3344366,20.1772586 33.5439984,20.1772586 C39.247751,20.1772586 42.8960974,16.117831 42.8960974,10.6196191 C42.8960974,8.10174633 42.1253199,5.86649191 40.7379208,4.19647426 L42.9474826,1.70429409 L41.3545427,0.265509652 L39.1449809,2.73199726 C37.6548111,1.65290893 35.7535602,1.03628703 33.5439984,1.03628703 C27.8402459,1.03628703 24.2432849,5.12140712 24.2432849,10.6196191 C24.2432849,13.1631844 25.0140622,15.3984388 26.4014615,17.0684564 L24.1918997,19.5349441 L25.7848396,20.9737285 Z M29.6901116,10.6196191 C29.6901116,7.61358731 31.0004332,5.32694777 33.569691,5.32694777 C34.5717016,5.32694777 35.3681717,5.68664386 35.9847936,6.27757318 L29.9984226,13.0090289 C29.792882,12.2896367 29.6901116,11.4931668 29.6901116,10.6196191 Z M33.569691,15.8865978 C32.5676806,15.8865978 31.7712105,15.5525943 31.1545887,14.961665 L37.115267,8.2559018 C37.3465001,8.94960144 37.4492705,9.77176397 37.4492705,10.6196191 C37.4492705,13.6256508 36.1389489,15.8865978 33.569691,15.8865978 Z M44.3701386,19.7404847 L49.7398876,19.7404847 L49.7398876,13.3430325 L52.2320678,13.3430325 C53.7993151,13.3430325 54.415937,14.0624247 54.7499406,15.4755166 C55.1353293,17.1198416 54.9297885,19.3807886 55.4436403,19.7404847 L60.7363115,19.7404847 L60.7363115,19.4578663 C60.0683044,19.2780183 60.4793858,16.6316826 59.9912266,14.4221208 C59.6829156,12.9833364 58.9121384,11.9556332 57.4219686,11.3903964 L57.4219686,11.3133187 C59.3489121,10.439771 60.4280006,8.94960144 60.4280006,6.84280992 C60.4280006,3.09169337 57.2421207,1.37029056 53.4910042,1.37029056 L44.3701386,1.37029056 L44.3701386,19.7404847 Z M49.7398876,5.58387354 L52.6945341,5.58387354 C54.2360888,5.58387354 55.0068663,6.35465093 55.0068663,7.56220216 C55.0068663,8.84683111 54.1590113,9.51483818 52.6174566,9.51483818 L49.7398876,9.51483818 L49.7398876,5.58387354 Z M62.1075823,19.7404847 L67.4773313,19.7404847 L67.4773313,13.8054989 L68.6591899,12.4694848 L73.3352392,19.7404847 L79.5785362,19.7404847 L72.3332289,8.76975336 L79.1931475,1.37029056 L73.0269283,1.37029056 L67.4773313,7.38235408 L67.4773313,1.37029056 L62.1075823,1.37029056 L62.1075823,19.7404847 Z M86.0369377,20.1772586 C81.2581179,20.1772586 77.6354641,18.1218522 77.5583863,13.8825766 L83.0565984,13.8825766 C83.2364463,15.3470537 84.36692,16.0407533 86.1397078,16.0407533 C87.1931037,16.0407533 88.4777327,15.629672 88.4777327,14.5248911 C88.4777327,13.5724938 87.5612317,13.2310971 85.8599107,12.7929148 L84.6320012,12.4836519 C81.6245733,11.7179151 78.1750085,10.6007132 78.1750085,6.84280992 C78.1750085,2.62922694 81.6178141,1.03628703 85.7543191,1.03628703 C89.5568208,1.03628703 93.0510116,2.62922694 93.1280894,6.6372693 L87.8097256,6.6372693 C87.6555699,5.63525871 86.9361779,4.99294422 85.4717007,4.99294422 C84.2898422,4.99294422 83.4676797,5.53248839 83.4676797,6.27757318 C83.4676797,7.32396188 84.9413815,7.50062488 87.5373807,8.11947167 L88.1465657,8.26874954 C91.1042135,9.02276748 93.9502521,10.284608 93.9502521,14.0367321 C93.9502521,18.0447745 90.3789835,20.1772586 86.0369377,20.1772586 Z"
+              fill="#000"
+            ></path></svg
+        ></a>
+        <nav aria-label="Social links" class="right-bottom-footer">
+          <a
+            href="https://www.facebook.com/ScriptingwithSaad/"
+            rel="noopener noreferrer"
+            target="_blank"
+            >FACEBOOK</a
+          >
+          <a
+            href="https://www.instagram.com/scriptingwithsaad"
+            rel="noopener noreferrer"
+            target="_blank"
+            >INSTAGRAM</a
+          >
+          <a
+            href="https://github.com/ScriptingWithSaad"
+            rel="noopener noreferrer"
+            target="_blank"
+            >GITHUB</a
+          >
+        </nav>
+      </div>
+    </footer>
+  </body>
 </html>
